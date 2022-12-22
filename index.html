@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./ui-components-master/ui-components-master/itc-slider/itc-slider.css"
+    />
   </head>
   <body>
     <header>
@@ -52,30 +56,43 @@
           <li><a href="#">blog</a></li>
           <li><a href="./contacts.html">contacts</a></li>
         </ul>
-        <ul class="social">
-          <li>
-            <a href="#"><div class="fb"></div></a>
-          </li>
-          <li>
-            <a href="#"><div class="google"></div></a>
-          </li>
-          <li>
-            <a href="#"><div class="wifi"></div></a>
-          </li>
-          <li>
-            <a href="#"><div class="twitter"></div></a>
-          </li>
-          <li>
-            <a href="#"><div class="in"></div></a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
       <div class="widgets">
-        <div class="widget wid-1"></div>
-        <div class="widget wid-2"></div>
-        <div class="widget wid-3"></div>
+        <div class="widget wid-1">
+          <div
+            class="itc-slider"
+            data-slider="itc-slider"
+            data-loop="true"
+            data-autoplay="true"
+            data-interval="7000"
+          >
+            <div class="itc-slider__wrapper">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  <img src="./assets/sld-img1.png" alt="" />
+                </div>
+                <div class="itc-slider__item">
+                  <img src="./assets/sld-img1.png" alt="" />
+                </div>
+                <div class="itc-slider__item">
+                  <img src="./assets/sld-img1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button>
+          </div>
+        </div>
+        <div class="wid-holder">
+          <div class="widget wid-2">
+            <img src="./assets/banner_1.jpg" alt="" />
+          </div>
+          <div class="widget wid-3">
+            <img src="./assets/banner_2.jpg" alt="" />
+          </div>
+        </div>
       </div>
       <div class="fp">
         <h1 class="nameofsection">FEATURED PRODUCTS</h1>
@@ -182,12 +199,22 @@
     </footer>
   </body>
   <!--Библиотека jQuery-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!--Готовый скрипт корзины-->
-<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-5271023d.js"></script>
+  <!--Готовый скрипт корзины-->
+  <script
+    defer
+    src="https://lk.easynetshop.ru/frontend/v5/ens-5271023d.js"
+  ></script>
 
-<!--Стили элементов для корзины-->
-<link href="https://lk.easynetshop.ru/frontend/v5/ens-5271023d.css" rel="stylesheet">
-<script src="/js/main.js"></script>
+  <!--Стили элементов для корзины-->
+  <link
+    href="https://lk.easynetshop.ru/frontend/v5/ens-5271023d.css"
+    rel="stylesheet"
+  />
+  <script src="/js/main.js"></script>
+  <script
+    src="./ui-components-master/ui-components-master/itc-slider/itc-slider.js"
+    defer
+  ></script>
 </html>

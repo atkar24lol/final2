@@ -128,6 +128,7 @@ header {
 .nav_bar {
   justify-content: space-between;
   width: 800px;
+  margin-bottom: 10px;
 }
 
 .nav_bar li a {
@@ -193,29 +194,24 @@ main {
   margin-top: 30px;
   height: 815px;
   width: 62%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  grid-template-areas:
-    "wid-1 wid-1 wid-1 wid-1"
-    "wid-1 wid-1 wid-1 wid-1"
-    "wid-2 wid-2 wid-3 wid-3";
 }
 
 .wid-1 {
-  background-color: #6a8a99;
-  grid-area: wid-1;
+  /* max-width: 1200px; */
 }
-.wid-2 {
-  background-image: url(./assets/banner_1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  grid-area: wid-2;
+/* .wid-2 {
 }
 .wid-3 {
-  background-image: url(./assets/banner_2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  grid-area: wid-3;
+} */
+
+.wid-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .fp {
@@ -395,7 +391,11 @@ footer {
   font-weight: 400;
 }
 
-
 .active-bag {
   background-color: #c3664b;
+}
+
+
+.itc-slider__item {
+  background-color: aquamarine;
 }
